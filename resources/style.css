@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+
+/* Header */
+
 header {
   font-family: Verdana;
   font-size: 14px;
@@ -30,6 +33,9 @@ justify-content: flex-end;
   margin: 25px;
   color: black;
 }
+
+/* Main body */
+
 .container {
   display: flex;
   border: 1px solid black;
@@ -39,11 +45,23 @@ justify-content: flex-end;
   margin: 20px 20px 0px 0px;
   border: 1px solid black;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
+.info, .headline {
+  border: 1px solid black;
+}
+.info {
+  padding: 20px 0px;
+}
+
+/* First column */
+
 .column.large {
   width: 630px;
 }
+
+/* Second column */
+
 .column.medium {
   width: 300px;
 }
