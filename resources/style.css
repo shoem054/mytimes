@@ -39,7 +39,7 @@ justify-content: flex-end;
 .container {
   display: flex;
   border: 1px solid black;
-  align-items: flex-end;
+  align-items: stretch;
 }
 .column {
   margin: 20px 20px 0px 0px;
@@ -65,6 +65,15 @@ justify-content: flex-end;
 .column.medium {
   width: 300px;
 }
+
+/* Third Column */
+
 .column.small {
   width: 240px;
+}
+.bites {
+  border: 1px solid black;
+}
+.bites h3 {
+  padding: 20px 0px;
 }
