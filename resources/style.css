@@ -59,6 +59,30 @@ justify-content: flex-end;
 .column.large {
   width: 630px;
 }
+#phish {
+  background-image: url("./party.png");
+}
+#earth {
+  background-image: url("./fall.png");
+}
+#camera {
+  background-image: url("./camera.png")
+}
+#camera, #phish, #earth {
+  height: 300px;
+}
+#phish p {
+  font-size: 40px;
+}
+#camera p, #earth p {
+  text-align: center;
+  font-size: 30px;
+}
+#camera p, #phish p, #earth p {
+  font-weight: bold;
+  font-family: Georgia;
+  color: white
+}
 
 /* Second column */
 
