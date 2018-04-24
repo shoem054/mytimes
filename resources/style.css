@@ -43,27 +43,38 @@ justify-content: flex-end;
 
 .container {
   display: flex;
-  border: 1px solid black;
   align-items: stretch;
+  justify-content: center;
 }
 .column {
-  margin: 20px 20px 0px 0px;
+  margin: 0px 20px 0px 0px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  top: 120px;
+}
+.header {
+  font-family: Georgia;
+font-size: 30px;
+font-weight: bold;
 }
 .info {
-  padding: 20px 0px;
+  font-family: Georgia;
+font-size: 17px;
 }
 
 /* First column */
 
 .column.large {
   width: 630px;
+  margin-right: 30px;
 }
 #phish {
   background-image: url("./party.png");
   height: 300px;
   width: 630px;
+  display: flex;
+  align-items: center;
 }
 #earth {
   background-image: url("./fall.png");
@@ -73,10 +84,14 @@ justify-content: flex-end;
 }
 #phish p {
   font-size: 40px;
+  position: relative;
+  left: 20px;
 }
 #camera, #earth {
   height: 300px;
   width: 300px;
+  display: flex;
+  align-items: center;
 }
 #camera p, #earth p {
   text-align: center;
@@ -90,7 +105,7 @@ justify-content: flex-end;
 #orca-burger {
   display: flex;
   flex-direction: row;
-  margin: 40px 0px 75px 0px;
+  margin: 40px 0px 50px 0px;
 }
 #earth-camera {
   display: flex;
@@ -102,6 +117,7 @@ justify-content: flex-end;
 
 .column.medium {
   width: 300px;
+  margin-right: 30px;
 }
 #cat {
   background-image: url("./cat.png")
@@ -113,6 +129,8 @@ justify-content: flex-end;
   font-family: Georgia;
   color: white;
   height: 300px;
+  position: relative;
+  top: 115px;
 }
 
 
@@ -121,6 +139,62 @@ justify-content: flex-end;
 .column.small {
   width: 240px;
 }
-.bites h3 {
+.bites {
   padding: 20px 0px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+#bites {
+  display: flex;
+  flex-direction: column;
+}
+#bites p {
+  background-color: WhiteSmoke;
+    font-family: Verdana;
+    font-size: 12px;
+    color: DimGray;
+    padding: 11px 20px 11px 20px;
+    border-bottom: 1px solid black;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 325px;
+  position: relative;
+  top: 180px;
+}
+.line-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+.footer-logo {
+  font-family: Georgia;
+ font-size: 16px;
+ font-weight: bold;
+ color: white;
+}
+.vl {
+  border-left: 2px solid white;
+  height: 20px;
+  margin: 0px 30px 0px 20px;
+}
+.footer-nav {
+  width: auto;
+}
+.footer-nav a {
+  margin: 15px;
+  color: black;
 }
